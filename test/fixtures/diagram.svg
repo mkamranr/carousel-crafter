@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect width="480" height="200" rx="14" fill="#141C26"/>
+  <rect x="28" y="70" width="130" height="60" rx="10" fill="#0F1720" stroke="#22303F" stroke-width="2"/>
+  <rect x="320" y="70" width="130" height="60" rx="10" fill="#0F1720" stroke="#22303F" stroke-width="2"/>
+  <text x="93" y="106" fill="#F2F5F8" font-family="sans-serif" font-size="19" text-anchor="middle">Server</text>
+  <text x="385" y="106" fill="#F2F5F8" font-family="sans-serif" font-size="19" text-anchor="middle">Client</text>
+  <line x1="166" y1="100" x2="308" y2="100" stroke="#F0B429" stroke-width="3"/>
+  <polygon points="318,100 304,93 304,107" fill="#F0B429"/>
+  <text x="237" y="88" fill="#8A9AAC" font-family="sans-serif" font-size="15" text-anchor="middle">HTML</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" width="640" height="200" role="img" aria-label="Carousel-Crafter">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F0B429"/>
+      <stop offset="100%" stop-color="#E08C1A"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2632"/>
+      <stop offset="100%" stop-color="#121A24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="200" rx="18" fill="#0A0E14"/>
+
+  <!-- A carousel: three slides, the front one in focus. The accent bar is the tool's mark. -->
+  <g transform="translate(44 34)">
+    <rect x="72" y="14" width="76" height="104" rx="10" fill="url(#fade)" opacity="0.35"/>
+    <rect x="50" y="8"  width="82" height="116" rx="11" fill="url(#fade)" opacity="0.65"/>
+    <rect x="22" y="0"  width="92" height="132" rx="12" fill="url(#fade)" stroke="#22303F" stroke-width="2"/>
+    <rect x="22" y="0"  width="92" height="7"  rx="3.5" fill="url(#accent)"/>
+    <rect x="36" y="26" width="64" height="9"  rx="4.5" fill="#F4F7FA" opacity="0.92"/>
+    <rect x="36" y="43" width="44" height="9"  rx="4.5" fill="#F4F7FA" opacity="0.92"/>
+    <rect x="36" y="66" width="64" height="5"  rx="2.5" fill="#8093A6" opacity="0.7"/>
+    <rect x="36" y="78" width="52" height="5"  rx="2.5" fill="#8093A6" opacity="0.7"/>
+    <rect x="36" y="90" width="58" height="5"  rx="2.5" fill="#8093A6" opacity="0.7"/>
+    <circle cx="39" cy="117" r="4" fill="#F0B429"/>
+    <rect x="50" y="114" width="26" height="5" rx="2.5" fill="#8093A6" opacity="0.55"/>
+  </g>
+
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif">
+    <!-- One text run with a tspan, so the two halves kern as a single word rather than
+         relying on a hand-measured x offset that drifts with the font. -->
+    <text x="210" y="92" font-size="48" font-weight="700" letter-spacing="-1.4">
+      <tspan fill="#F4F7FA">Carousel</tspan><tspan fill="url(#accent)">-Crafter</tspan>
+    </text>
+    <text x="212" y="126" font-size="19" font-weight="500" fill="#8093A6" letter-spacing="0.4">Markdown in. Posting-ready carousels out.</text>
+  </g>
+</svg>

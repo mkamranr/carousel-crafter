@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+/* The app chrome only. Slides render inside iframes, so none of this can reach them —
+   which is the point: the preview document must be exactly what the exporter produces. */
+html,
+body,
+#root {
+  height: 100%;
+}

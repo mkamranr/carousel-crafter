@@ -1,0 +1,26 @@
+node_modules/
+dist/
+out/
+*.tsbuildinfo
+.DS_Store
+
+# May contain an API key.
+carousel.config.json
+
+# Export output, written beside the posts it came from.
+.carousel-crafter/
+
+# Stock photos downloaded by the Background picker.
+bg-*.jpg
+bg-*.jpeg
+bg-*.png
+bg-*.webp
+bg-*.avif
+
+# Local environment. Never commit.
+.env
+
+# Working folders: your posts, their images, settings and exports. Test inputs live in
+# test/fixtures, which the suite owns and nothing else edits.
+/posts/
+/fixtures/

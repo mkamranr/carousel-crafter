@@ -1,0 +1,8 @@
+{
+  "handle": "@daily.techtalks",
+  "scale": 2,
+  "fitFloor": 0.75,
+  "theme": {
+    "accent": "#F0B429"
+  }
+}

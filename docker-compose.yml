@@ -1,0 +1,20 @@
+services:
+  carousel-crafter:
+    build: .
+    image: carousel-crafter:latest
+    # Published to loopback only. The server has no authentication and serves whatever
+    # directory it is pointed at — it must not be reachable from a network.
+    ports:
+      - "127.0.0.1:5178:5178"
+    volumes:
+      # Your posts, their images, settings, and exports. Everything lives here.
+      - ./posts:/posts
+    environment:
+      # Optional. Any value set here overrides the one stored in carousel.config.json, which
+      # is how a key can be used without ever being written to disk.
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - PEXELS_API_KEY=${PEXELS_API_KEY:-}
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+    # Chromium needs more than the default 64MB of shared memory or it crashes mid-render.
+    shm_size: "1gb"
+    restart: unless-stopped
